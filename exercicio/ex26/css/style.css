@@ -29,7 +29,8 @@ img {
     margin: auto;
 }
 
-#tablet, #pc, #tv, #print {
-    display: none;
-}
+#tablet{display: none;}
+#pc{display: none;}
+#tv{display: none;}
+#print{display: none;}
 

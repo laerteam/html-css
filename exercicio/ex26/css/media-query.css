@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*Media para tablet*/
-@media (min-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 1190px) {
     html, body {
         background-image: url(../imagens/back-tablet.jpg);
     }
@@ -16,7 +16,7 @@
 }
 
 /*Media para desktop*/
-@media (min-width: 1280px) {
+@media screen and (min-width: 1191px) and (max-width: 2559px) {
     html, body {
         background-image: url(../imagens/back-pc.jpg);
     }
@@ -25,13 +25,13 @@
         display: block;
     }
 
-    #phone {
+    #phone, #tablet {
         display: none;
     }
 }
 
 /*Media para TVs/Telas grandes*/
-@media (min-width: 2560px) {
+@media screen and (min-width: 2560px) {
     html, body {
         background-image: url(../imagens/back-tv.jpg);
     }
@@ -40,7 +40,22 @@
         display: block;
     }
 
-    #phone {
+    #phone, #tablet {
+        display: none;
+    }
+}
+
+/*Media para impressão do conteúdo*/
+@media print {
+    html, body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    img#print {
+        display: block;
+    }
+
+    #phone, #tablet {
         display: none;
     }
 }
