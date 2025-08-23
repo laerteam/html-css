@@ -25,7 +25,7 @@
         display: block;
     }
 
-    #phone, #tablet {
+    #phone {
         display: none;
     }
 }
@@ -40,22 +40,26 @@
         display: block;
     }
 
-    #phone, #tablet {
+    #phone {
         display: none;
     }
 }
 
 /*Media para impressão do conteúdo*/
 @media print {
-    html, body {
-        background-image: url(../imagens/back-print.jpg);
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 1px solid black;
     }
 
     img#print {
         display: block;
     }
 
-    #phone, #tablet {
+    #phone {
         display: none;
     }
 }
