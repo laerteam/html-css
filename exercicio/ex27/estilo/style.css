@@ -33,6 +33,7 @@ header nav {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
+    padding: 10px;
     box-sizing: border-box;
 }
 
