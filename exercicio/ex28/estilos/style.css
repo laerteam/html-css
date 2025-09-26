@@ -17,33 +17,33 @@ p, h1, h2 {
     margin-bottom: 10px;
 }
 
-section.flex-container {
+section.flex-content {
     background-color: lightgray;
     padding: 10px;
 }
 
-article.media-text {
+section article.media-text {
     display: flex;
     flex-flow: row wrap-reverse;
     margin-bottom: 20px;
 }
 
-article.text-media {
+section article.text-media {
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 20px;
 }
 
-.text {
+section article.text-media div.media iframe {
+    width: 90%;
+}
+
+div.text {
     flex: 1 1 480px;
 }
 
-.media {
+div.media {
     flex: 1 1 480px;
     margin: auto;
     text-align: center;
-}
-
-article.text-media .media iframe {
-    width: 90%;
 }
